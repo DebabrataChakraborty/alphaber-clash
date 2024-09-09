@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Clash Pro</title>
-    <!-- daisy UI & Tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- css file link -->
-     <link rel="stylesheet" href="/style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Clash Pro</title>
+  <!-- daisy UI & Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css file link -->
+  <link rel="stylesheet" href="/style/style.css">
 </head>
+
 <body class="font-poppins">
-    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <!-- home screen -->
+  <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+    <!-- home screen -->
     <section class="home min-h-screen text-white flex flex-col justify-center items-center hidden">
       <div class="flex flex-col items-center gap -10">
         <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
@@ -22,59 +24,86 @@
 
     </section>
     <!-- play-Ground  -->
-    <section class="play-ground">
-        <div>
-            <!-- screen -->
-             
-                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">1024×320</div>
-    
-             <!-- keyboard  start-->
-              <div>
-                <div class="my-1 flex w-full justify-center gap-1">
-                    <kbd class="kbd">q</kbd>
-                    <kbd class="kbd">w</kbd>
-                    <kbd class="kbd">e</kbd>
-                    <kbd class="kbd">r</kbd>
-                    <kbd class="kbd">t</kbd>
-                    <kbd class="kbd">y</kbd>
-                    <kbd class="kbd">u</kbd>
-                    <kbd class="kbd">i</kbd>
-                    <kbd class="kbd">o</kbd>
-                    <kbd class="kbd">p</kbd>
-                  </div>
-                  <div class="my-1 flex w-full justify-center gap-1">
-                    <kbd class="kbd">a</kbd>
-                    <kbd class="kbd">s</kbd>
-                    <kbd class="kbd">d</kbd>
-                    <kbd class="kbd">f</kbd>
-                    <kbd class="kbd">g</kbd>
-                    <kbd class="kbd">h</kbd>
-                    <kbd class="kbd">j</kbd>
-                    <kbd class="kbd">k</kbd>
-                    <kbd class="kbd">l</kbd>
-                  </div>
-                  <div class="my-1 flex w-full justify-center gap-1">
-                    <kbd class="kbd">z</kbd>
-                    <kbd class="kbd">x</kbd>
-                    <kbd class="kbd">c</kbd>
-                    <kbd class="kbd">v</kbd>
-                    <kbd class="kbd">b</kbd>
-                    <kbd class="kbd">n</kbd>
-                    <kbd class="kbd">m</kbd>
-                    <kbd class="kbd">/</kbd>
-                  </div>
-              </div>
+    <section class="play-ground hidden">
+      <div class="flex flex-col items-center gap-20 pt-20 ">
+        <!-- screen -->
 
-             <!-- keyboard end -->
-              <!-- lifeline -->
-            
-            </div>
+        <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+          <div class="flex justify-center">
+            <p class="bg-[#2F2941] text-white px-6 pb-4 rounded-b-xl">Don't watch keyboard while playing...</p>
+          </div>
+            <div class="flex justify-center items-center h-full">
+            <p class="text-black text-9xl font-bold">Y</p>
+          
+          </div>
+
+
+        </div>
+
+
+        <!-- keyboard  start-->
+        <div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+        </div>
+
+        <!-- keyboard end -->
+        <!-- lifeline -->
+        <div class="flex justify-between">
+          <button class="btn rounded-full bg-purple-500 text-white px-4">
+            Life
+            <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height={height}
+              focusable={focusable} {...props}>
+              <path fill={fill}
+                d="m47.6 300.4l180.7 168.7c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141c-45.6-7.6-92 7.3-124.6 39.9l-12 12l-12-12c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5M432 512a144 144 0 1 0 0-288a144 144 0 1 0 0 288m47.9-225c4.3 3.7 5.4 9.9 2.6 14.9L452.4 356H488c5.2 0 9.8 3.3 11.4 8.2s-.1 10.3-4.2 13.4l-96 72c-4.5 3.4-10.8 3.2-15.1-.6s-5.4-9.9-2.6-14.9l30.1-54.1H376c-5.2 0-9.8-3.3-11.4-8.2s.1-10.3 4.2-13.4l96-72c4.5-3.4 10.8-3.2 15.1.6" />
+            </svg>
+            <span>1</span>
+          </button>
+          <button class="btn rounded-full bg-purple-700 text-white px-4">
+            Score
+            <img src="images/coin.svg" alt="" srcset="">
+            <span>1</span>
+          </button>
+        </div>
+      </div>
 
     </section>
     <section class="score">
 
     </section>
-</main> 
-    
+  </main>
+
 </body>
+
 </html>
